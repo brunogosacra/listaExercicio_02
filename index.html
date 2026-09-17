@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Exercícios Práticos de JavaScript</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div>
+      <p class="eyebrow">ATIVIDADE PRÁTICA</p>
+
+      <h1>Exercícios de JavaScript</h1>
+
+      <p class="subtitulo">
+        Resolva 50 exercícios de forma prática e interativa.
+      </p>
+    </div>
+
+    <input
+      id="busca"
+      type="search"
+      placeholder="Buscar exercício..."
+    >
+  </header>
+
+  <main>
+    <nav class="filtros">
+      <button class="filtro ativo" data-filtro="Todos">
+        Todos
+      </button>
+
+      <button class="filtro" data-filtro="Condicionais">
+        Condicionais
+      </button>
+
+      <button class="filtro" data-filtro="Estruturas de repetição">
+        Repetição
+      </button>
+
+      <button class="filtro" data-filtro="Vetores e integração">
+        Vetores
+      </button>
+    </nav>
+
+    <section id="lista" class="grade"></section>
+  </main>
+
+  <div id="modal" class="modal escondido">
+    <div class="janela">
+
+      <button id="fechar" class="fechar">
+        ×
+      </button>
+
+      <p id="modalBloco" class="eyebrow"></p>
+
+      <h2 id="modalTitulo"></h2>
+
+      <p id="modalDescricao" class="descricao"></p>
+
+      <div id="campos" class="campos"></div>
+
+      <button id="resolver" class="botao-resolver">
+        Resolver exercício
+      </button>
+
+      <div class="resultado-container">
+        <h3>Resultado</h3>
+
+        <div id="saida" class="saida">
+          Preencha os campos e clique em "Resolver exercício".
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
